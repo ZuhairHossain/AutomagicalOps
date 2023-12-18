@@ -1,4 +1,4 @@
-TOKEN="add your token here"
+TOKEN="add your Gitlab personal access token here"
 GROUP_ID="add your group id here"
 CI_YML_CONTENT="add your ci yml location here"
 BRANCH_NAME="add your branch name here"
