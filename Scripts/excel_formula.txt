@@ -1,0 +1,5 @@
+# ISVA Justifications
+=IF(OR(A:A="SSL Certificate Cannot Be Trusted",A:A="SSL Self-Signed Certificate"), "Kubernetes components(kubelet, kube-apiserver, etcd-server) self-sign for secure communication, simplifying deployment without relying on external certificate authorities",
+ IF(A:A="HSTS Missing From HTTPS Server (RFC 6797)", "Since the kubelet 10250 is not public facing endpoint HSTS is not required, kubelet endpoint is completely internal and non-browser endpoint",
+ IF(OR(E:E=22, E:E=0), "Not managed by RedDot", "")))
+
